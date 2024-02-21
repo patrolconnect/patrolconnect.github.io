@@ -1,0 +1,5 @@
+robots.txt
+User-agent: *
+Disallow: 
+Disallow: /cgi-bin/
+Sitemap: https://info.patrol-connect.com/sitemap.xml
