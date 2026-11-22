@@ -49,9 +49,9 @@
   <main id="main">
     <!-- --- Hero --- -->
     <section id="top" class="container hero" aria-labelledby="hero-title">
-      <p class="eyebrow">Built for Missouri law enforcement</p>
+      <p class="eyebrow">Built for Missouri Law Enforcement</p>
       <h1 id="hero-title">Less time on paperwork. More time on patrol.</h1>
-      <p class="lead">Patrol Connect is a web application of field and paperwork tools. Officers sign in from a web browser and open every module from one Home page.</p>
+      <p class="lead">Patrol Connect is a web application of field and paperwork tools. Officers sign in from a web browser and open every module from one Home page, with a tool search, favorite tools pinned with a star and their most recent drafts ready to resume.</p>
       <div class="hero__actions">
         <a class="button button--primary button--large" href="#contact" data-topic-link="agency_quote">Get Agency Pricing</a>
         <a class="button button--large" href="https://www.patrol-connect.com/signup">Apply as an Individual Officer</a>
@@ -67,10 +67,10 @@
     <!-- --- Key figures --- -->
     <div class="band band--compact" role="region" aria-label="Key figures">
       <ul class="container figures">
-        <li><strong>22 Modules</strong> <span>casework, legal references, utilities and training</span></li>
-        <li><strong>$80 a Year</strong> <span>per officer, every module included; $500 agency minimum</span></li>
-        <li><strong>In the Browser</strong> <span>officers sign in from a web browser; nothing to install</span></li>
-        <li><strong>On Your Device</strong> <span>drafts saved encrypted in the browser</span></li>
+        <li><strong>22 Modules</strong> <span>Casework, legal references, utilities and training modules included.</span></li>
+        <li><strong>$80 a Year</strong> <span>Per officer, every module included; $500 agency minimum.</span></li>
+        <li><strong>In the Browser</strong> <span>Officers sign in from a web browser, or add it to a phone's home screen.</span></li>
+        <li><strong>On Your Device</strong> <span>Drafts saved encrypted in the browser.</span></li>
       </ul>
     </div>
 
@@ -83,6 +83,7 @@
           <p class="lead">The PC Statement Generator and Search Warrant Generator produce a populated Word document on the agency or county template. Booking and Tow Sheet Generator produce the PDF. Every generator asks the officer to review the output before filing.</p>
           <ul class="checklist">
             <li>Charges from Missouri's charge code database</li>
+            <li>A driver's license barcode scan fills the name, date of birth and address</li>
             <li>A 17-character VIN fills year, make and model</li>
             <li>Email the finished document to others, with your own copy</li>
           </ul>
@@ -96,7 +97,7 @@
           <img src="images/dwi-hazmat-phones.svg" alt="Illustration of two phones: the DWI Investigation Toolkit counting down the 15-minute observation period, and the Hazmat Quick Reference showing 2024 ERG isolation distances for UN 1005, anhydrous ammonia." width="880" height="660" loading="lazy">
         </div>
         <div class="split__copy">
-          <p class="eyebrow">In the field</p>
+          <p class="eyebrow">In The Field</p>
           <h2>References that answer at the roadside.</h2>
           <p class="lead">Missouri statutes and charge codes, case law, the 2024 Emergency Response Guidebook, VIN decoding and IP lookup sit beside the document modules on one Home page.</p>
           <ul class="checklist">
@@ -122,11 +123,11 @@
           <li>
             <article class="module-card">
               <h4>PC Statement Generator</h4>
-              <p>A Missouri probable cause statement on the agency template, with optional AI review of the narrative.</p>
-              <p class="module-card__output">Output: Word document</p>
+              <p>A Missouri probable cause statement on the agency template, with driver's license scanning and optional AI review of the narrative.</p>
+              <p class="module-card__output">Output: Word document, downloaded or emailed</p>
               <details>
                 <summary>Details<span class="visually-hidden"> for PC Statement Generator</span></summary>
-                <p><strong>Data: </strong>The AI review sends the charge list and narrative to OpenAI without redaction; the help text says so.</p>
+                <p><strong>Data: </strong>A license barcode is read on the device and nothing is uploaded. The AI review sends the charge list and narrative to OpenAI without redaction, and the page says so before the officer agrees.</p>
                 <p><strong>Limits: </strong>Missouri PC statements only. Not legal advice.</p>
               </details>
             </article>
@@ -135,11 +136,11 @@
             <article class="module-card">
               <h4>Search Warrant Generator</h4>
               <p>A Missouri search warrant application on a county template, with a reusable snippet library.</p>
-              <p class="module-card__output">Output: Word document</p>
+              <p class="module-card__output">Output: Word document, downloaded or emailed</p>
               <details>
                 <summary>Details<span class="visually-hidden"> for Search Warrant Generator</span></summary>
                 <p><strong>Data: </strong>Draft contents reach Patrol Connect servers only on Email or when saving a reusable template.</p>
-                <p><strong>Limits: </strong>Missouri search warrants on county templates.</p>
+                <p><strong>Limits: </strong>Missouri search warrants on county templates for Crawford, Dade and Franklin counties.</p>
               </details>
             </article>
           </li>
@@ -150,7 +151,7 @@
               <p class="module-card__output">Output: Narrative on the clipboard</p>
               <details>
                 <summary>Details<span class="visually-hidden"> for Narrative Composer</span></summary>
-                <p><strong>Data: </strong>Names, SSNs, dates of birth and phone numbers the officer confirms are replaced before processing; plates, VINs and addresses are sent as entered.</p>
+                <p><strong>Data: </strong>Names, SSNs, dates of birth and phone numbers the officer confirms are replaced before processing. Plates, VINs, addresses, the reporting officer's name and badge number, and the agency are sent as entered.</p>
                 <p><strong>Limits: </strong>Unavailable when the agency turns AI features off.</p>
               </details>
             </article>
@@ -158,23 +159,23 @@
           <li>
             <article class="module-card">
               <h4>Report Analyzer</h4>
-              <p>AI review of a pasted report: issue cards with severity, why it matters and a suggested revision.</p>
+              <p>AI review of a pasted report: issue cards with Critical or Review severity, why it matters and a suggested revision.</p>
               <p class="module-card__output">Output: PDF with feedback</p>
               <details>
                 <summary>Details<span class="visually-hidden"> for Report Analyzer</span></summary>
-                <p><strong>Data: </strong>Confirmed PII is replaced in the browser before anything is sent.</p>
-                <p><strong>Limits: </strong>Unavailable when the agency turns AI features off.</p>
+                <p><strong>Data: </strong>Names, SSNs, dates of birth and phone numbers the officer confirms are replaced in the browser before anything is sent.</p>
+                <p><strong>Limits: </strong>The review can miss problems, so the officer still reviews the report. Unavailable when the agency turns AI features off.</p>
               </details>
             </article>
           </li>
           <li>
             <article class="module-card">
               <h4>Booking</h4>
-              <p>The jail's booking form with charge codes autofilled and a medical screening that tells jail staff the action each answer requires.</p>
-              <p class="module-card__output">Output: PDF emailed to the facility</p>
+              <p>The jail's booking form with charge codes autofilled and a medical screening that says what must happen next and who does it.</p>
+              <p class="module-card__output">Output: PDF emailed to the facility, or printed</p>
               <details>
                 <summary>Details<span class="visually-hidden"> for Booking</span></summary>
-                <p><strong>Data: </strong>Keeps no drafts. Typed addresses go to Esri ArcGIS for suggestions.</p>
+                <p><strong>Data: </strong>The booking in progress saves encrypted on the device for 24 hours, so a closed tab does not lose it. Typed addresses go to Esri ArcGIS for suggestions.</p>
                 <p><strong>Limits: </strong>Crawford County Jail is set up today.</p>
               </details>
             </article>
@@ -206,12 +207,12 @@
           <li>
             <article class="module-card">
               <h4>Tow Sheet Generator</h4>
-              <p>A tow sheet with VIN autofill, tow company presets and a damage diagram.</p>
-              <p class="module-card__output">Output: Printable PDF</p>
+              <p>A tow sheet with VIN autofill, driver and owner ID scanning, tow company presets and a damage diagram.</p>
+              <p class="module-card__output">Output: Printable PDF, or the PDF by email</p>
               <details>
                 <summary>Details<span class="visually-hidden"> for Tow Sheet Generator</span></summary>
-                <p><strong>Data: </strong>Address searches go to Esri ArcGIS.</p>
-                <p><strong>Limits: </strong>Tow company presets are added by an agency administrator.</p>
+                <p><strong>Data: </strong>Drafts, drawn signatures included, save encrypted on the device. A license barcode is read on the device. Address searches go to Esri ArcGIS.</p>
+                <p><strong>Limits: </strong>Tow company presets are added by an agency administrator; individual subscribers enter the tow company by hand.</p>
               </details>
             </article>
           </li>
@@ -222,7 +223,7 @@
               <p class="module-card__output">Output: PDF flyer or plain text</p>
               <details>
                 <summary>Details<span class="visually-hidden"> for BOLO Generator</span></summary>
-                <p><strong>Data: </strong>Photos are never saved to the draft.</p>
+                <p><strong>Data: </strong>Drafts, photos and captions included, save encrypted on the device. Photos are uploaded only inside a BOLO the officer emails.</p>
                 <p><strong>Limits: </strong>Not an NCIC/MULES entry.</p>
               </details>
             </article>
@@ -231,23 +232,23 @@
             <article class="module-card">
               <h4>Miranda Waiver</h4>
               <p>The warning in English or Spanish, read aloud, with signatures drawn or typed on screen.</p>
-              <p class="module-card__output">Output: Signed PDF</p>
+              <p class="module-card__output">Output: Signed PDF, or the PDF by email</p>
               <details>
                 <summary>Details<span class="visually-hidden"> for Miranda Waiver</span></summary>
-                <p><strong>Data: </strong>Drawn signatures are never saved to the device.</p>
-                <p><strong>Limits: </strong>The printed affirmation is in English for every language.</p>
+                <p><strong>Data: </strong>The PDF is generated in the browser. Drafts, drawn signatures included, save encrypted on the device only.</p>
+                <p><strong>Limits: </strong>The printed statements are in English for every language.</p>
               </details>
             </article>
           </li>
           <li>
             <article class="module-card">
               <h4>Media Statement Generator</h4>
-              <p>Seven press release types; copy, download and print are blocked while placeholders remain.</p>
+              <p>Seven press release templates; export is blocked while the headline or details are empty or a placeholder remains.</p>
               <p class="module-card__output">Output: PDF, clipboard text or text file</p>
               <details>
                 <summary>Details<span class="visually-hidden"> for Media Statement Generator</span></summary>
-                <p><strong>Data: </strong>Draft contents never reach Patrol Connect servers.</p>
-                <p><strong>Limits: </strong>No Email action.</p>
+                <p><strong>Data: </strong>Draft contents never reach Patrol Connect servers. Each completed export is logged with the report number.</p>
+                <p><strong>Limits: </strong>Drafts stay in the browser where they were written.</p>
               </details>
             </article>
           </li>
@@ -259,7 +260,7 @@
               <details>
                 <summary>Details<span class="visually-hidden"> for Preservation Letter Generator</span></summary>
                 <p><strong>Data: </strong>Drafts saved to the device only.</p>
-                <p><strong>Limits: </strong>Does not send the letter to the provider.</p>
+                <p><strong>Limits: </strong>Not legal advice, a warrant or a subpoena. Does not send the letter to the provider.</p>
               </details>
             </article>
           </li>
@@ -287,7 +288,7 @@
           <li>
             <article class="module-card">
               <h4>Missouri Statutes</h4>
-              <p>Charge codes, statutes and NCIC classifications, with fingerprint and DNA requirements.</p>
+              <p>Charge codes, statutes and NCIC classifications, with fingerprint, DNA and DOR requirements.</p>
               <p class="module-card__output">Output: Charge details</p>
               <details>
                 <summary>Details<span class="visually-hidden"> for Missouri Statutes</span></summary>
@@ -299,11 +300,11 @@
           <li>
             <article class="module-card">
               <h4>Case Law Resources</h4>
-              <p>Missouri and federal case law through Google Scholar, plus curated legal providers.</p>
-              <p class="module-card__output">Output: Search results</p>
+              <p>A Google Scholar search of federal and Missouri case law in a new tab, plus curated legal providers.</p>
+              <p class="module-card__output">Output: Google Scholar results</p>
               <details>
                 <summary>Details<span class="visually-hidden"> for Case Law Resources</span></summary>
-                <p><strong>Data: </strong>Search history is private to the account that made it.</p>
+                <p><strong>Data: </strong>Recent searches and pins stay on the device, private to the account that made them. The search text goes to Google Scholar.</p>
                 <p><strong>Limits: </strong>Verify citations and holdings against official reporters.</p>
               </details>
             </article>
@@ -332,7 +333,7 @@
           <li>
             <article class="module-card">
               <h4>Hazmat Quick Reference</h4>
-              <p>2024 ERG hazards and isolation distances by ID number or material name.</p>
+              <p>2024 ERG hazards and isolation distances by ID number, material name or visible placard.</p>
               <p class="module-card__output">Output: On-screen guidance</p>
               <details>
                 <summary>Details<span class="visually-hidden"> for Hazmat Quick Reference</span></summary>
@@ -372,7 +373,7 @@
               <p class="module-card__output">Output: MP4 viewing copy</p>
               <details>
                 <summary>Details<span class="visually-hidden"> for Security Footage Converter</span></summary>
-                <p><strong>Data: </strong>Converted on the computer; files are not uploaded.</p>
+                <p><strong>Data: </strong>Converted on the computer; files are not uploaded. Patrol Connect records only conversion counts.</p>
                 <p><strong>Limits: </strong>AVI files only; 1 GB per file.</p>
               </details>
             </article>
@@ -446,10 +447,10 @@
           <h3>For Individual Officers</h3>
           <p class="muted small">When your agency does not subscribe</p>
           <ol class="steps">
-            <li><div><strong>Apply Online</strong><span>Verify your email address and tell us about your agency.</span></div></li>
+            <li><div><strong>Apply Online</strong><span>Verify your email address with a 6-digit code and tell us about your agency.</span></div></li>
             <li><div><strong>We Review</strong><span>A Patrol Connect administrator reviews the request. No charge until it is approved.</span></div></li>
             <li><div><strong>Pay by Link</strong><span>You receive a payment link by email.</span></div></li>
-            <li><div><strong>Sign In</strong><span>Your account is ready once payment confirms.</span></div></li>
+            <li><div><strong>Sign In</strong><span>Your account is created once payment is made.</span></div></li>
           </ol>
           <a class="button button--primary" href="https://www.patrol-connect.com/signup">Apply Now</a>
         </article>
@@ -467,6 +468,8 @@
           <ul class="checklist checklist--body">
             <li>$500 annual minimum</li>
             <li>Booking facilities: $100 per facility per year, setup included</li>
+            <li>Administrators enable or disable modules and AI features</li>
+            <li>Supervisors and administrators see how many seats are in use</li>
             <li>Subscription Agreement with BlueShield Solutions LLC</li>
           </ul>
         </article>
@@ -476,7 +479,9 @@
           <ul class="checklist checklist--body">
             <li>For Missouri officers whose agency does not subscribe</li>
             <li>Renews yearly until cancelled</li>
-            <li>Cancel online any time; access runs to the end of the paid year; no refunds</li>
+            <li>Cancel online any time through Manage Billing; access runs to the end of the paid year; no refunds</li>
+            <li>Receipts and renewal reminders come from Stripe</li>
+            <li>Uses no agency seat; your agency's supervisors cannot see or manage it</li>
             <li>Can convert to an agency account when your agency subscribes</li>
           </ul>
         </article>
@@ -504,12 +509,13 @@
           <p class="eyebrow">Privacy and security</p>
           <h2 id="privacy-title">Drafts stay on the officer's device.</h2>
           <ul class="checklist checklist--body">
-            <li>Saved drafts are encrypted in the browser and never leave the device</li>
+            <li>Saved drafts are encrypted in the browser and never leave the device; contents are sent only when the officer uses a module's Email or send action</li>
             <li>Before most AI requests, names, SSNs, dates of birth and phone numbers the officer confirms are replaced</li>
             <li>No advertising or generalized AI training on agency data; information is never sold</li>
-            <li>TLS 1.3 with HSTS; sessions end after 30 minutes idle; security actions are audit logged</li>
+            <li>TLS 1.3 with HSTS in transit; server-held data encrypted at rest</li>
+            <li>Sessions end after 30 minutes idle; sign-in attempts limited per username and per IP address; access, security and audit logs kept</li>
           </ul>
-          <p class="fine-print">BlueShield Solutions LLC does not claim CJIS certification; we design and operate controls to align with CJIS policies and standards relevant to our role as a service provider.</p>
+          <p class="fine-print">BlueShield Solutions LLC does not claim CJIS certification; it designs and operates controls to align with CJIS policies and standards relevant to its role as a service provider.</p>
         </div>
         <div class="split__media">
           <figure class="dataflow">
@@ -517,13 +523,13 @@
               <svg class="dataflow__icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
               <div>
                 <h3>Stays on the Officer's Device</h3>
-                <p>Saved drafts, VIN history and the Hazmat scene checklist, encrypted in the browser</p>
+                <p>Saved drafts, VIN and IP lookup history and the Hazmat scene checklist, encrypted in the browser</p>
               </div>
             </div>
             <p class="dataflow__gate">Sent only when the officer uses</p>
             <ul class="dataflow__paths">
               <li>
-                <h3>Email</h3>
+                <h3>Email or Send to Jail</h3>
                 <p class="dataflow__route"><span>Patrol Connect servers</span><span class="visually-hidden"> then </span><span>Recipients</span></p>
               </li>
               <li>
@@ -535,13 +541,14 @@
                 <p class="dataflow__route"><span>VIN</span><span class="visually-hidden"> sent to </span><span>NHTSA</span></p>
                 <p class="dataflow__route"><span>Address or map search</span><span class="visually-hidden"> sent to </span><span>Esri ArcGIS</span></p>
                 <p class="dataflow__route"><span>IP address</span><span class="visually-hidden"> sent to </span><span>Patrol Connect servers</span><span class="visually-hidden"> then </span><span>ipwho.is</span></p>
+                <p class="dataflow__route"><span>Case-law search</span><span class="visually-hidden"> sent to </span><span>Google Scholar</span></p>
               </li>
               <li>
                 <h3>Dictation</h3>
                 <p class="dataflow__route"><span>Narrative Composer audio</span><span class="visually-hidden"> sent to </span><span>The browser maker</span></p>
               </li>
             </ul>
-            <figcaption>Servers hold accounts (with saved search warrant templates and favorites), agency settings, department resources, Crime Heatmap records, subscription records and audit logs. Before most AI requests, names, SSNs, dates of birth and phone numbers are replaced in the browser, and plates, VINs and addresses are sent as entered; the PC Statement Generator AI review sends its charge list and narrative to OpenAI unredacted.</figcaption>
+            <figcaption>Servers hold accounts (with saved search warrant templates and favorites), agency settings, department resources, Crime Heatmap records, subscription records and audit logs. Before Narrative Composer and Report Analyzer send text to OpenAI, names, SSNs, dates of birth and phone numbers the officer confirms are replaced in the browser; Narrative Composer sends plates, VINs and addresses as entered. The PC Statement Generator AI review sends its charge list and narrative to OpenAI unredacted, and the page says so.</figcaption>
           </figure>
         </div>
       </div>
@@ -553,7 +560,11 @@
       <div class="faq">
         <details>
           <summary>Do we need to install anything?</summary>
-          <p>No. Officers sign in from a web browser.</p>
+          <p>No. Officers sign in from a web browser. They can also add Patrol Connect to the home screen of an iPhone, iPad or Android phone, or install it as an app from Chrome or Edge on a desktop.</p>
+        </details>
+        <details>
+          <summary>What do supervisors and administrators manage?</summary>
+          <p>Supervisors create, edit and remove accounts, set a new password or resend the sign-in email, keep department resources, and correct Crime Heatmap entries in the Supervisor Panel, with a feed of the 20 most recent changes to the department. Agency administrators also choose which modules and AI features the agency uses, keep up to 25 tow company presets, and set the dispatch phone printed on BOLO flyers and the media contact printed on media statements.</p>
         </details>
         <details>
           <summary>Is every module included?</summary>
@@ -568,12 +579,16 @@
           <p>Crawford County Jail is set up today. Another facility costs $100 a year, which covers setup and upkeep.</p>
         </details>
         <details>
+          <summary>What happens to an individual subscription when our agency subscribes?</summary>
+          <p>It can be converted to an agency account. Until then it uses no agency seat, and the agency's supervisors and administrators cannot see or manage it.</p>
+        </details>
+        <details>
           <summary>Is officer data used to train AI?</summary>
           <p>No. Patrol Connect does not let third-party services use agency data for advertising or to train generalized AI models, and does not sell information.</p>
         </details>
         <details>
           <summary>Is Patrol Connect CJIS certified?</summary>
-          <p>BlueShield Solutions LLC does not claim CJIS certification; we design and operate controls to align with CJIS policies and standards relevant to our role as a service provider.</p>
+          <p>BlueShield Solutions LLC does not claim CJIS certification; it designs and operates controls to align with CJIS policies and standards relevant to its role as a service provider.</p>
         </details>
         <details>
           <summary>Is it an emergency or dispatch service?</summary>
@@ -596,13 +611,13 @@
             <label for="f-topic">Topic</label>
             <select id="f-topic" name="topic" class="input" autocomplete="off">
               <option value="agency_quote" data-next="We send a quote for your seat count and the Subscription Agreement to review." selected>Agency Pricing or Quote</option>
-              <option value="demo" data-next="We schedule a live walkthrough for your agency.">Request a Demo</option>
+              <option value="demo" data-next="Patrol Connect support replies by email to arrange a demo for your agency.">Request a Demo</option>
               <option value="facility" data-next="We confirm your facility's booking form and its $100 yearly fee.">Booking Facility Setup</option>
               <option value="individual" data-next="We answer by email." data-note="Ready to subscribe? Apply on the signup page; there is no need to contact us first.">Individual Subscription</option>
               <option value="support" data-next="Support replies by email." data-note="Never send your password. If you can sign in, Support is also on your Profile page.">Help with My Account</option>
               <option value="billing" data-next="We reply about your invoice, payment or renewal.">Billing</option>
               <option value="feedback" data-next="Your idea goes to the Patrol Connect team.">Feedback or Feature Idea</option>
-              <option value="media" data-next="We route your message to BlueShield Solutions LLC.">Media or Partnership</option>
+              <option value="media" data-next="Patrol Connect support replies by email.">Media or Partnership</option>
               <option value="other" data-next="We reply by email.">Something Else</option>
             </select>
           </div>
